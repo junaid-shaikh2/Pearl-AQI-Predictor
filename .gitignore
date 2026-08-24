@@ -1,0 +1,17 @@
+# Python & Virtual Env
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+
+# Environment secrets
+.env
+
+# Data & Model caches
+data/
+*.pkl
+*.joblib
+
+# OS-specific
+.DS_Store
+Thumbs.db
