@@ -49,8 +49,9 @@ def engineer_features(df: pd.DataFrame) -> pd.DataFrame:
     df['pm2_5_lag_24h'] = df.groupby('city')['pm2_5'].shift(24)
     df['aqi_lag_48h'] = df.groupby('city')['aqi'].shift(48)
 
-    # 4. Create Rolling Averages
+    # 4. Create Rolling Averages (Both AQI and PM2.5)
     df['aqi_rolling_24h'] = df.groupby('city')['aqi'].transform(lambda x: x.rolling(window=24, min_periods=1).mean())
+    df['pm2_5_rolling_24h'] = df.groupby('city')['pm2_5'].transform(lambda x: x.rolling(window=24, min_periods=1).mean())
     
     df = df.dropna().reset_index(drop=True)
     return df
