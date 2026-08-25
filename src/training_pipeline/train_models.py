@@ -16,6 +16,8 @@ project_root = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(_
 def train_and_evaluate():
     input_path = os.path.join(project_root, "data", "features_aqi.csv")
     models_dir = os.path.join(project_root, "models")
+
+    os.makedirs(models_dir, exist_ok=True)
     
     if not os.path.exists(input_path):
         logger.error(f"Features file not found at {input_path}")
