@@ -88,7 +88,7 @@ def fetch_and_process_live_data(city_name: str):
 # ---------------------------------------------------------
 # HEADER SECTION
 # ---------------------------------------------------------
-st.title("Cloud Quality Intelligence.")
+st.title("Air Quality Intelligence.")
 st.markdown("Real-time 72-hour AQI forecasting powered by an automated continuous training pipeline.")
 
 with st.expander("ℹ️ View Global AQI Scale & Thresholds"):
