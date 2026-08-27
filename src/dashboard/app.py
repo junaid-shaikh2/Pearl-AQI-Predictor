@@ -17,6 +17,13 @@ from src.config import CITIES, OPENWEATHER_API_KEY
 from src.api_clients.openweather_client import OpenWeatherClient
 from src.feature_pipeline.etl_pipeline import engineer_features
 
+# --- CLOUD SECRETS OVERRIDE ---
+try:
+    if "OPENWEATHER_API_KEY" in st.secrets:
+        OPENWEATHER_API_KEY = st.secrets["OPENWEATHER_API_KEY"]
+except Exception:
+    pass # Fallback to local .env if running on your laptop
+
 # ---------------------------------------------------------
 # PAGE CONFIGURATION & MINIMALIST STYLING
 # ---------------------------------------------------------
