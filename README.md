@@ -9,7 +9,7 @@ Developed as a core project during a Software Engineering internship at 10Pearls
 <img width="940" height="398" alt="image" src="https://github.com/user-attachments/assets/0d53b7c4-ac4f-4bdb-8600-24de3f8315f6" />
 
 
-<img width="940" height="447" alt="image" src="https://github.com/user-attachments/assets/3ad2ce1c-bce2-4e22-9f65-6ca432f9e3a4" />
+[<img width="940" height="447" alt="image" src="https://github.com/user-attachments/assets/3ad2ce1c-bce2-4e22-9f65-6ca432f9e3a4" />](https://github.com/junaid-shaikh2/Pearl-AQI-Predictor)
 
 
 ## 🎯 Core Features & Milestones Achieved
